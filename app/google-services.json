@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "797892510628",
+    "firebase_url": "https://task-4-ngulang-firebase.firebaseio.com",
+    "project_id": "task-4-ngulang-firebase",
+    "storage_bucket": "task-4-ngulang-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797892510628:android:7ca7f7c06caf19dc",
+        "android_client_info": {
+          "package_name": "com.example.reza.task4ngulangyangkesekian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797892510628-as34eag422p4943ho72gu5ut9cvmmsot.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reza.task4ngulangyangkesekian",
+            "certificate_hash": "0b9256bc37770d059b41ad69101dec2f19774f5d"
+          }
+        },
+        {
+          "client_id": "797892510628-3rds5b6qduuvb3rlrnrerad46bfidh76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4WdPHR43QtjRQ_lj86Pxp9pT2C5daEgU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797892510628-3rds5b6qduuvb3rlrnrerad46bfidh76.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

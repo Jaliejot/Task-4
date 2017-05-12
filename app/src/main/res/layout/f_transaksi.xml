@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#f782c6"
+    android:nestedScrollingEnabled="true"
+    android:verticalScrollbarPosition="right"
+    tools:context="com.example.reza.task4ngulangyangkesekian.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/FormPengeluaran"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/LabelOutcome"
+                android:text="New Outcome"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/DeskripsiPengeluaran"
+                android:hint="Deskripsi"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_below="@id/LabelOutcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/hargaPengeluaran"
+                android:hint="Harga"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_below="@id/DeskripsiPengeluaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:id="@+id/submitPengeluaran"
+                android:text="Tambah Pengeluaran"
+                android:layout_below="@id/hargaPengeluaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+                android:onClick="kirimDataPengeluaran"
+                />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/FormPemasukan"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FormPengeluaran"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/LabelIncome"
+                android:text="New Income"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/DeskripsiPemasukan"
+                android:hint="Deskripsi"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_below="@id/LabelIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/hargaPemasukan"
+                android:hint="Harga"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_below="@id/DeskripsiPemasukan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:id="@+id/submitPemasukan"
+                android:text="Tambah Pemasukan"
+                android:layout_below="@id/hargaPemasukan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+
+                android:onClick="PemasukanOk"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

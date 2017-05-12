@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Pengeluaran"
+            android:text="Expenses"
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/RekapPengeluaran"
+            android:layout_below="@id/Pengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:cardCornerRadius="2dp"
+            >
+            <ListView
+                android:id="@+id/ListPengeluaran"
+                android:layout_below="@id/Pengeluaran"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:verticalScrollbarPosition="left"
+                android:nestedScrollingEnabled="true"
+                android:scrollIndicators="left"
+                android:scrollbars="vertical"/>
+
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/TextTotalPengeluaran"
+            android:text="Total         : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below ="@id/RekapPengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/JumlahPengeluaran"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="0"
+            android:layout_below="@id/RekapPengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/Pemasukan"
+            android:text="Income"
+            android:layout_below="@id/TextTotalPengeluaran"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/RekapPemasukan"
+            android:layout_below="@id/Pemasukan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:cardCornerRadius="2dp"
+            >
+            <ListView
+                android:id="@+id/ListPenmasukan"
+                android:layout_below="@id/Pengeluaran"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:nestedScrollingEnabled="true"
+                />
+
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/TextTotalPemasukan"
+            android:text="Total         : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below ="@id/RekapPemasukan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/JumlahPemasukan"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="0"
+            android:layout_below="@id/RekapPemasukan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/TextSaldo"
+            android:text="Saldo        : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below ="@id/TextTotalPemasukan"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/JumlahSaldo"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextSaldo"
+            android:layout_alignBottom="@+id/TextSaldo"
+            android:layout_toRightOf="@+id/TextTotalPemasukan"
+            android:layout_toEndOf="@+id/TextTotalPemasukan"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp" />
+    </RelativeLayout>
+
+
+
+</ScrollView>
